@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet-Shop</title>
+    <link rel="shortcut icon" href="assets/logo-header.png" type="image/x-icon">
     <!-- google-font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,8 @@
         extend: {
           colors: {
             clifford: '#da373d',
-            'button-praimary':'rgba(255, 220, 38, 1.00)'
+            'button-primary':'rgba(255, 220, 38, 1.00)',
+            'nav-bg':'rgba(255, 249, 244, 1.00)'
 
         }
       }
@@ -26,9 +28,10 @@
     }
     
   </script>
+  <script src="https://kit.fontawesome.com/0352361e63.js" crossorigin="anonymous"></script>
   <style>
 .adlam-font {
-  font-family: "ADLaM Display", serif;
+  font-family: "ADLaM Display", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -36,7 +39,33 @@
   </style>
 </head>
 <body class="adlam-font">
-    <button class="btn btn-primary">erwhgaerheartea5rthe46rjrsy6sjktyrk</button>
-    <button class="border-t-neutral-600">fgrswgggerwewrghaew</button>
+    <header>
+      <section class="grid grid-cols-3 space-x-24  items-center text-center justify-center content-center mx-auto py-8 bg-nav-bg text-4xl  ">
+       <!-- left section -->
+       <div class="flex ">
+        <img class="w-auto h-auto relative max-sm:ml-10" src="assets/logo-header.png" alt="">
+        <h2 class="hidden lg:flex mx-4">Browse<span class="text-button-primary">4</span>Pets</h2>
+       </div>
+       <!-- middle section -->
+        <div class=" ">
+          <ul class="max-md:hidden lg:flex gap-8">
+            <li><a>Find a pet</a></li>
+            <li><a>Breeds</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- right section -->
+        <div class=" flex flex-row-reverse gap-4 -ml-10 lg:ml-10">
+          <button class="max-md:hidden text-center items-center"><i class=" fa-solid fa-magnifying-glass"></i></button>
+          <button class=""><i class="max-md:hidden fa-regular fa-bell"></i></button>
+          <button class="max-md:hidden btn btn-outline btn-warning">LogIn</button>
+          <button class="max-md:hidden btn  btn-warning">singUp</button>
+           <div class=" mr-10 "><button><i class="fa-solid fa-bars lg:hidden"></i></button></div>
+        </div>
+     </section>
+  </header>
+    <main></main> 
+    <footer>
+   </footer>
 </body>
 </html>
